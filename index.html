@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>urban nest</title>
+</head>
+<body>
+  <nav>
+    <div class="logo">
+      <h4>SKY CAST</h4>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="facilities.html">Today weather</a></li>
+      <li><a href="location.html">Location</a></li>
+      <li><a href="log in.html">Log in</a></li>
+    </ul>
+    <div class="burger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+    </nav>
+  </nav>
+  <script src="script.js"></script>
+
+  <style>
+    .center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100px;
+
+    }
+    .center button {
+        font-size: 2rem;
+        color: snow;
+        background-color: skyblue;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        border: 2px solid skyblue;
+
+    }
+  </style>
+
+</head>
+<body>
+  <div class="center">
+    <a href="next.html">
+      <button>weather</button>
+    </a>
+  </div>
+
+<br>
+<br>
+  <div class="image-container">
+    <img src="weather.jpg" alt="Responsive Image">
+    <br>
+    <br>
+    <br>
+    <h1>why sky cast?</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
+       rem alias exercitationem porro nemo, placeat vero, distinctio perferendis veritatis 
+      quis, ipsa non. Perspiciatis aliquam quae corrupti fugiat, quasi obcaecati officiis.</p>
+  </div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+   
+
+    <script>
+       
+        var activitiesData = [
+            {
+                title: "City Tour",
+                description: "Explore the city's main attractions with our guided tour.",
+                time: "Every Monday and Friday at 10 AM",
+                image: "city tour.jpg"
+            },
+            {
+                title: "Pub Crawl",
+                description: "Join us for a fun night out and experience the local nightlife.",
+                time: "Every Wednesday at 8 PM",
+                image: "pup.jpg"
+            },
+            {
+                title: "Movie Night",
+                description: "Enjoy a cozy movie night in our common area.",
+                time: "Every Thursday at 7 PM",
+                image: "movie night.jpg"
+            }
+         
+        ];
+
+        
+        function createActivityElement(activity) {
+            var activityElement = document.createElement("div");
+            activityElement.className = "activity";
+
+            var imageElement = document.createElement("img");
+            imageElement.src = activity.image;
+            imageElement.alt = activity.title;
+            activityElement.appendChild(imageElement);
+
+            var titleElement = document.createElement("h2");
+            titleElement.textContent = activity.title;
+            activityElement.appendChild(titleElement);
+
+            var descriptionElement = document.createElement("p");
+            descriptionElement.textContent = activity.description;
+            activityElement.appendChild(descriptionElement);
+
+            var timeElement = document.createElement("p");
+            timeElement.textContent = "Time: " + activity.time;
+            activityElement.appendChild(timeElement);
+
+            return activityElement;
+        }
+
+       
+        function displayActivities() {
+            var activitiesContainer = document.getElementById("activities");
+
+            activitiesData.forEach(function(activity) {
+                var activityElement = createActivityElement(activity);
+                activitiesContainer.appendChild(activityElement);
+            });
+        }
+
+      
+        displayActivities();
+    </script>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+<div class="image-container1">
+  <img src="7732677_5304.jpg" alt="Example Image">
+</div>
+     <br>
+     <br>
+     <br>
+     <br>
+
+    <h1>Services</h1>
+    <div class="facility">
+        <h2>current weather condition</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia saepe nisi temporibus architecto dolor tempora eligendi. Qui perspiciatis ab fugiat nisi? Aspernatur deleniti voluptate sapiente atque modi culpa dolorum! Deserunt.</p>
+    </div>
+
+    <div class="facility">
+        <h2>forcast</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta cumque quo corrupti quidem molestias delectus ut minima necessitatibus totam, unde minus tempore cupiditate consequatur dignissimos dicta numquam voluptas eaque! Culpa.</p>
+    </div>
+
+    <div class="facility">
+        <h2>Radar and Satellite Maps </h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ipsum, molestiae nesciunt atque esse quis dicta nobis ipsa assumenda repudiandae quos, eius, facilis harum omnis quod vero amet ad eaque!.</p>
+    </div>
+
+    <div class="facility">
+        <h2>Climate Information</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem laboriosam obcaecati itaque quibusdam illo, corrupti magni nihil adipisci in asperiores blanditiis dolorum, reiciendis sit veritatis? Voluptatum ab ducimus suscipit est.</p>
+    </div>
+
+    <div class="facility">
+
+      <div class="image-container2">
+        <img src="Screenshot (4).png" alt="Example Image">
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1>Reviews</h1>
+    <div class="testimonial">
+        <div class="testimonial-content">
+            <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque corrupti sint tenetur ea, laboriosam nisi repudiandae temporibus architecto pariatur. Doloremque incidunt eaque obcaecati doloribus maiores mollitia laborum labore modi aperiam!</p>
+            <p class="testimonial-author">- John Doe</p>
+        </div>
+    </div>
+
+    <div class="testimonial">
+        <div class="testimonial-content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit voluptatem eligendi molestiae fuga pariatur non quo optio sapiente eos aliquid! Illo quis placeat consequuntur perferendis obcaecati enim officiis ipsam dolores!</p>
+            <p class="testimonial-author">- Jane Smith</p>
+        </div>
+    </div>
+
+    <div class="testimonial">
+        <div class="testimonial-content">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi, sed dignissimos facere aperiam minus molestiae animi? Quod eaque voluptatem doloribus cum aliquam voluptatum. Excepturi, reprehenderit? Eos culpa ea suscipit quam?</p>
+            <p class="testimonial-author">- David Johnson</p>
+    <a href="leave-review.html" class="leave-review-link">Leave a Review</a>
+    </div>
+    </div>
+    </div>
+<br>
+<br>
+   
+
+
+
+
+
+
+
+
+      <br>
+      <br>
+      <br>
+      <footer>
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>Contact Us</h3>
+            <p> Street, City</p>
+            <p>Email: urbannest.com</p>
+            <p>Phone: +19 9894471629</p>
+          </div>
+          <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">location</a></li>
+              <li><a href="#">today weather</a></li>
+              <li><a href="#">log in</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2023 urban nest Hostel. All rights reserved.</p>
+        </div>
+      </footer>
+      
+
+</body>
+</html>
+
